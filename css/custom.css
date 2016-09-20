@@ -23,6 +23,9 @@ nav {
 .blue {
     background-color: #3178C6; 
 }
+.gray {
+    background-color: #F1F1F1; 
+}
 .waves-effect.waves-blue .waves-ripple {
     background-color: rgba(25, 118, 210, 0.65);
 }
@@ -50,7 +53,6 @@ nav {
     height: 56px;
     width: 56px; 
     margin-top: 4px; 
-    
 }
 .collection .collection-item.avatar p {
     float: left; 
@@ -83,10 +85,12 @@ nav {
     position: absolute;
     width: 82px;
     height: 82px;
-    transform: translate(300%,0);
-    -webkit-transform: translate(300%,0); /** Chrome & Safari **/
-    -o-transform: translate(300%,0); /** Opera **/
-    -moz-transform: translate(300%,0); /** Firefox **/
+    left: calc(50% - 42px);
+/*
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+*/
 }
 .employee-name-container {
     display: none;
@@ -98,4 +102,18 @@ nav {
     font-weight: 600;
     color: #3178C6;
     display: none;
+    margin-top: 50px; 
 }
+.content-style-overlay .collection-item {
+    text-align: left; 
+    height: 72px;
+    line-height: 56px;
+    font-size: 16px;
+}
+.content-style-overlay .collection-item .material-icons {
+    text-align: left; 
+    height: 72px;
+    line-height: 56px;
+    
+}
+

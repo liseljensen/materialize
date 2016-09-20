@@ -11,14 +11,23 @@
 	padding: 0 1em;
 	border: none;
 	background-color: #e85657;
-	color: #f9f6e5;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
 	line-height: 80px;
 	overflow: hidden;
 }
-
+.morph-button.green > button {
+    background: #46A657 url('../img/Clock-In.svg') no-repeat -75px -35px;
+/*    padding-top: 80%;*/
+    font-size: 20px; 
+}
+.morph-button.orange > button {
+    background: #F7931E url('../img/break.svg') no-repeat -30px -55px;
+/*    padding-top: 80%;*/
+    font-size: 20px; 
+}
 .morph-button.open > button {
 	pointer-events: none;
 }
@@ -34,10 +43,13 @@
 /* Common styles for overlay and modal type (fixed morph) */
 .morph-button-fixed,
 .morph-button-fixed .morph-content {
-	width: 300px;
-	height: 80px;
+    height: 35%;
+    width: 100%;
 }
-
+.morph-button-fixed.orange {
+    height: 17.66%;
+    margin-top: 16px; 
+}
 .morph-button-fixed > button {
 	z-index: 1000;
 	width: 100%;
@@ -103,12 +115,15 @@
 
 /* Morph Button Style: Overlay */
 .morph-button.morph-button-overlay {
-	margin: 50px auto;
+	//margin: 50px auto;
 }
 
 .morph-button-overlay .morph-content {
 	overflow: hidden;
 	background: #e85657;
+}
+.morph-button-overlay .morph-content.green {
+    background: #46A657;
 }
 
 .morph-button-overlay.open .morph-content {

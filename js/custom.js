@@ -23,10 +23,10 @@ $(function() {
     });
     $('.collection').on('click', '.collection-item', function(event) {
         $this = $(this);
-        $('.collection-item').not(this).fadeOut(100);
-        $(this).children('.title').hide();
-        $('nav').fadeOut(100);
-        $('.employee-name-container').fadeIn(100);
+        $('.collection-item').not(this).fadeOut(400);
+        $(this).children('.title').fadeOut(400);
+        $('nav').fadeOut(400);
+        $('.employee-name-container').fadeIn(400);
         
         
          
@@ -35,16 +35,16 @@ $(function() {
             function() {
                 $this.children('img').addClass('selected');
                 $this.addClass('selected');
-                $('.employee-name').fadeIn(100);
+                $('.employee-name').fadeIn(500);
                 $('.collection').css('height', 'auto');
             },
-            400
+            500
         );
         setTimeout(
             function() {
-                $('#keypad').fadeIn(100); 
+                $('#keypad').fadeIn(600); 
             },
-            500
+            600
         );
         
         
