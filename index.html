@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s6 blue">
+        </div>
+        <div class="col s6">
+            <nav>
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                             
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <div class="employee-name-container">
+                <div class="employee-name">Good Morning, Nicole!</div>
+            </div>
+            <ul id="employee-list" class="collection">
+
+            </ul>
+            <div id="keypad" class="panel v-centered kiosk-keypad">
+                <div class="center-container">
+                    <div class="keypad-feedback">Please enter your pin.</div>
+                    <div class="ts-keypad">
+                        <input type="hidden" name="keypad">
+                        <div class="dot-feedback">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="delete-key"><img src="/images/glyph_icons/kiosk-delete.png" alt="delete" title="delete"></div>
+                        </div>
+                        <div class="numeric-keypad">
+                            <div class="key number">
+                                <div class="key-label">1</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">2</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">3</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">4</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">5</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">6</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">7</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">8</div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">9</div>
+                            </div>
+                            <div class="key function">
+                                <div class="key-label"></div>
+                            </div>
+                            <div class="key number">
+                                <div class="key-label">0</div>
+                            </div>
+                            <div class="key function keypad-delete-key">
+                                <div class="key-label">delete_num</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
